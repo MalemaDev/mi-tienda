@@ -16,7 +16,7 @@
 
   const adminOnly = (req,res,next)=>{
     if(!req.user) return res.status(401).json({msg:'No autorizado'});
-    if(req.user.role !== 'IsAdmin') return res.status(403).json({msg:'Se necesita rol admin'});
+    if(req.user.role !=='IsAdmin') return res.status(403).json({msg:'Se necesita rol admin'});
     next();
   }
 
