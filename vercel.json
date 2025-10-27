@@ -1,7 +1,7 @@
 {
-  "buildCommand": "cd client && npm install && npm run build",
+  "buildCommand": "cd client && rm -rf node_modules && npm install && node ./node_modules/vite/bin/vite.js build",
   "outputDirectory": "client/dist",
-  "installCommand": "npm install --prefix client && npm install --prefix server",
+  "installCommand": "cd server && npm install",
   "rewrites": [
     {
       "source": "/api/:path*",
