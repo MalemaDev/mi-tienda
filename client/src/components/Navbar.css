@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3b0764;
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-left a,
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 15px;
+}
+
+.user-name {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background-color: #9333ea;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #7e22ce;
+}
