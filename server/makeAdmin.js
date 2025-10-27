@@ -7,7 +7,7 @@ dotenv.config();
 const makeAdmin = async () => {
   await mongoose.connect(process.env.MONGODB_URI);
 
-  const email = "admin@ventas.com";
+  const email = "admin1@ventas.com";
   const user = await User.findOneAndUpdate(
     { email },
     { isAdmin: true },
